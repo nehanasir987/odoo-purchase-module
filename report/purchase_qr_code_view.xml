@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_inherit_qr_code" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit.qr.code</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+         <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="qr_code" widget="image" class="oe_avatar" readonly="1"/>
+          </xpath>
+        </field>
+    </record>
+</odoo>
