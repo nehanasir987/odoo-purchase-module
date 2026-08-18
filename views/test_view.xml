@@ -9,6 +9,7 @@
                     <group>
                         <field name="name"/>
                         <field name="email"/>
+                        <field name="phone"/>
                     </group>
                 </sheet>
             </form>
